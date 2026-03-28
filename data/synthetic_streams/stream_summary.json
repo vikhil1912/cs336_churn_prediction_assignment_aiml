@@ -1,0 +1,12 @@
+{
+  "total_events": 500,
+  "alerts_fired": 232,
+  "alert_rate_pct": 46.4,
+  "critical_count": 5,
+  "high_count": 227,
+  "medium_count": 34,
+  "low_count": 234,
+  "avg_churn_probability": 0.3266,
+  "avg_latency_ms": 41.45,
+  "threshold_used": 0.35
+}

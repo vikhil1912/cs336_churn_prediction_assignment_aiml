@@ -1,0 +1,95 @@
+{
+  "dataset": {
+    "total_customers": 7021,
+    "churn_rate_pct": 26.45
+  },
+  "model": {
+    "model_type": "RandomForestClassifier",
+    "best_params": {
+      "max_depth": null,
+      "min_samples_leaf": 2,
+      "n_estimators": 300
+    },
+    "best_threshold": 0.35,
+    "test_metrics": {
+      "accuracy": 0.7338,
+      "precision": 0.4984,
+      "recall": 0.8172,
+      "f1": 0.6191,
+      "roc_auc": 0.8302
+    },
+    "feature_columns": [
+      "gender",
+      "SeniorCitizen",
+      "Partner",
+      "Dependents",
+      "tenure",
+      "PhoneService",
+      "PaperlessBilling",
+      "MonthlyCharges",
+      "TotalCharges",
+      "MultipleLines_No phone service",
+      "MultipleLines_Yes",
+      "InternetService_Fiber optic",
+      "InternetService_No",
+      "OnlineSecurity_No internet service",
+      "OnlineSecurity_Yes",
+      "OnlineBackup_No internet service",
+      "OnlineBackup_Yes",
+      "DeviceProtection_No internet service",
+      "DeviceProtection_Yes",
+      "TechSupport_No internet service",
+      "TechSupport_Yes",
+      "StreamingTV_No internet service",
+      "StreamingTV_Yes",
+      "StreamingMovies_No internet service",
+      "StreamingMovies_Yes",
+      "Contract_One year",
+      "Contract_Two year",
+      "PaymentMethod_Credit card (automatic)",
+      "PaymentMethod_Electronic check",
+      "PaymentMethod_Mailed check",
+      "charges_per_month_ratio",
+      "avg_monthly_spend",
+      "tenure_group",
+      "num_services",
+      "has_streaming",
+      "has_support",
+      "is_month_to_month",
+      "auto_payment",
+      "risk_score"
+    ],
+    "top_5_features": [
+      "risk_score",
+      "charges_per_month_ratio",
+      "MonthlyCharges",
+      "tenure",
+      "avg_monthly_spend"
+    ]
+  },
+  "stream": {
+    "total_events": 500,
+    "alerts_fired": 232,
+    "alert_rate_pct": 46.4,
+    "critical_count": 5,
+    "high_count": 227,
+    "medium_count": 34,
+    "low_count": 234,
+    "avg_churn_probability": 0.3266,
+    "avg_latency_ms": 41.45,
+    "threshold_used": 0.35
+  },
+  "business_impact": {
+    "intervention_cost_usd": 60340,
+    "revenue_protected_usd": 225000,
+    "net_benefit_usd": 164660,
+    "roi_pct": 272.9
+  },
+  "top_5_features": [
+    "risk_score",
+    "charges_per_month_ratio",
+    "MonthlyCharges",
+    "tenure",
+    "avg_monthly_spend"
+  ]
+}
